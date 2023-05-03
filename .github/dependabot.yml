@@ -6,6 +6,10 @@
 version: 2
 updates:
   - package-ecosystem: "" # See documentation for possible values
-    directory: "/streams/pom.xml" # Location of package manifests
+    directory: "/streams/" # Location of package manifests
     schedule:
       interval: "weekly"
+    allow:
+      - dependency-type: "all"
+    assignee:
+      - "fzampa"
